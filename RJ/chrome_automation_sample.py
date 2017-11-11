@@ -1,8 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-#driver = webdriver.Chrome("/path/to/chromedriver") #Optional, if not specified, WebDriver will search your path for chromedriver.
-driver = webdriver.Chrome()
+chromedriver = r"C:\SeleniumDrivers\chromedriver-v2.33_win32\chromedriver.exe"
+#options = Options()
+#options.binary_location = '/path/to/chrome'
+
+#driver = webdriver.Chrome()
+driver = webdriver.Chrome(chromedriver) #Optional, if not specified, WebDriver will search your path for chromedriver.
+#driver = webdriver.Chrome(chromedriver, chrome_options=options)
 driver.get("http://www.python.org")
 
 #assert "Python" in driver.title
