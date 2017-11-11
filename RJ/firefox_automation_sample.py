@@ -2,8 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
-geckodriver = r"C:\SeleniumDrivers\geckodriver-v0.19.0-win64\geckodriver.exe"
-binary = FirefoxBinary(r"C:\Browsers\Mozilla Firefox55.0.3-x64\firefox.exe")
+geckodriver = r"C:\Users\ridwan julvianto\AppData\Local\Programs\SeleniumDrivers\geckodriver-v0.19.1-win32\geckodriver.exe"
+binary = FirefoxBinary(r"C:\Users\ridwan julvianto\AppData\Local\Programs\Browsers\Mozilla Firefox56.0.2-x86\firefox.exe")
 fp = webdriver.FirefoxProfile()
 
 driver = webdriver.Firefox(executable_path=geckodriver, firefox_binary=binary, firefox_profile=fp) #Optional, if not specified, WebDriver will search your path for geckodriver.
