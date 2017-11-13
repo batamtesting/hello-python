@@ -5,8 +5,10 @@ from selenium.webdriver.chrome.options import Options
 chromedriver = r"C:\Users\ridwan julvianto\AppData\Local\Programs\SeleniumDrivers\chromedriver-v2.33_win32\chromedriver.exe"
 
 options = Options()
-#options.add_argument("start-maximized")
+#options.add_argument("--start-maximized")
+#options.add_argument("--disable-infobars")
 #options.add_argument("--disable-extensions")
+#options.add_argument(r"--user-data-dir='C:\Users\ridwan julvianto\AppData\Local\Temp\UserData'");
 options.binary_location = r"C:\Users\ridwan julvianto\AppData\Local\Programs\Browsers\Chrome62.0.3202.62\chrome.exe"
 
 #driver = webdriver.Chrome()
